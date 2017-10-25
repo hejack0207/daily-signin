@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.1.0"></a>
+# [2.1.0](https://github.com/yidinghan/daily-signin/compare/v2.0.0...v2.1.0) (2017-10-25)
+
+
+### Bug Fixes
+
+* **docker:** miising chrome dependencies ([09a3338](https://github.com/yidinghan/daily-signin/commit/09a3338))
+
+
+### Features
+
+* **v2ex:** logout captchaBase64 for debug ([ebafeda](https://github.com/yidinghan/daily-signin/commit/ebafeda))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/yidinghan/daily-signin/compare/v1.4.0...v2.0.0) (2017-10-23)
 
