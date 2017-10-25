@@ -25,7 +25,7 @@ const framePageMethods = {
 };
 
 const loginProcess = async (page) => {
-  await page.goto(URLS.home);
+  await page.goto(URLS.home, { waitUntil: 'networkidle' });
   await page.screenshot({ path: './dev-images/smzdm-home.png' });
 
   // for skip activity
