@@ -29,8 +29,11 @@ const loginProcess = async (page) => {
   await page.screenshot({ path: './dev-images/smzdm-home.png' });
 
   // for skip activity
+  console.log('loginProcess.waitfor.5s');
   await page.waitFor(5000);
+  console.log('loginProcess.waitfor.loginselector');
   await page.waitForSelector(ELES.login);
+  await page.waitFor(500);
   // await page.click(ELES.login, {clickCount: 2, delay: 10});
   await page.click(ELES.login);
   await page.waitForSelector(ELES.loginIframeID);

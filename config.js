@@ -51,7 +51,8 @@ const config = {
         login: 'https://zhiyou.smzdm.com/user/login/ajax_check',
       },
       elements: {
-        login: '#index-head > div.J_entry.entry > div.user-wrap > div.user > div.user-info.not-login.J_info > a',
+        login:
+          '#index-head > div.J_entry.entry > div.user-wrap > div.user > div.user-info.not-login.J_info > a',
         loginIframeID: '#J_login_iframe',
         loginIframeName: 'J_login_iframe',
         usernameInput: '#username',
@@ -91,11 +92,15 @@ const config = {
   },
   puppeteer: {
     headless: process.env.NODE_ENV !== 'dev',
+    args: ['--no-sandbox', '--disable-setuid-sandbox'],
     timeout: 10000, // 10s
+    // ignoreHTTPSErrors: true,
+    // executablePath: 'google-chrome-unstable',
     viewport: {
       width: 1920,
       height: 1080,
     },
+    dumpio: process.env.NODE_ENV !== 'dev',
   },
 };
 
