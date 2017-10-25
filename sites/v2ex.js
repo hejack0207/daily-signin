@@ -13,9 +13,10 @@ const getCaptchaWords = async (page) => {
   const captchaElement = await page.$(ELES.captchaImage);
   const captchaBuffer = await captchaElement.screenshot();
   const captchaBase64 = captchaBuffer.toString('base64');
+  console.log('getCaptchaWords.captchaBase64', { captchaBase64 });
 
   const orcResult = await orc.webImage(captchaBase64, { language_type: 'ENG' });
-  console.log('orcResult', JSON.stringify(orcResult));
+  console.log('getCaptchaWords.orcResult', JSON.stringify(orcResult));
   // @ts-ignore
   const captchaWords = orc.parseWordsResult(orcResult);
 
@@ -24,7 +25,7 @@ const getCaptchaWords = async (page) => {
 
 const isLoginFailed = async (page) => {
   // element not exists
-  if (!(await page.$(ELES.loginIssue))) {
+  if (!await page.$(ELES.loginIssue)) {
     return false;
   }
 
