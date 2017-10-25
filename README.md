@@ -28,7 +28,7 @@ smzdm, v2ex, jd jr, jd daily signin script
 
 ## Avaliable Sites
 
- - [smzdm](https://smzdm.com), WIP
+ - [smzdm](https://smzdm.com)
  - [v2ex](https://v2ex.com), (require baidu ai api id
  - [jd](https://vip.jd.com), WIP
  - [jdjr](https://vip.jr.jd.com), WIP
