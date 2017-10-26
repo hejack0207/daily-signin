@@ -23,6 +23,7 @@ WORKDIR /src-app
 
 COPY --from=dependencies /app/node_modules ./node_modules
 
+RUN ["mkdir", "dev-images"]
 COPY ./ /src-app
 
-CMD npm start
+CMD ["npm", "start"]
