@@ -1,3 +1,6 @@
+const envConfig = require('ding-env-config');
+const defaultsdeep = require('lodash.defaultsdeep');
+
 const config = {
   baidu_ai: {
     app_id: process.env.BAIDU_API_ID,
@@ -111,4 +114,6 @@ if (config.isBase64) {
   ).toString();
 }
 
-module.exports = config;
+const envConf = envConfig();
+
+module.exports = defaultsdeep(envConf, config);
