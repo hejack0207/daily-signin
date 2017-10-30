@@ -22,6 +22,8 @@
   "homepage": "https://github.com/yidinghan/daily-signin#readme",
   "dependencies": {
     "baidu-aip-sdk": "^1.4.1",
+    "ding-env-config": "^1.2.0",
+    "lodash.defaultsdeep": "^4.6.0",
     "puppeteer": "^0.12.0"
   },
   "devDependencies": {
