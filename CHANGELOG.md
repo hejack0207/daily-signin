@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/yidinghan/daily-signin/compare/v2.2.0...v2.3.0) (2017-10-31)
+
+
+### Bug Fixes
+
+* **docker:** missing images directory ([c73d7c7](https://github.com/yidinghan/daily-signin/commit/c73d7c7))
+
+
+### Features
+
+* **config:** use envConfig to overwrite config in startup ([76dc340](https://github.com/yidinghan/daily-signin/commit/76dc340))
+* **smzdm:** log out all childFrames[].name ([f0b4b31](https://github.com/yidinghan/daily-signin/commit/f0b4b31))
+* **smzdm:** try to waitFor more time to load out iframe ([fb8237e](https://github.com/yidinghan/daily-signin/commit/fb8237e))
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/yidinghan/daily-signin/compare/v2.1.0...v2.2.0) (2017-10-25)
 
