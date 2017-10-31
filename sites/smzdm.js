@@ -9,7 +9,12 @@ const waitUntil = 'networkidle';
 
 const getLoginFrame = (page) => {
   const childFrames = page.mainFrame().childFrames();
-  console.log('getLoginFrame.childFrames.length', childFrames.length);
+
+  console.log(
+    'getLoginFrame.childFrames[].name',
+    childFrames.map(frame => frame.name()),
+  );
+
   const loginFrame = childFrames.find(frame => frame.name() === ELES.loginIframeName);
   return loginFrame;
 };
