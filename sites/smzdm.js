@@ -45,6 +45,8 @@ const loginProcess = async (page) => {
   await page.waitForSelector(ELES.loginIframeID);
   await page.screenshot({ path: './dev-images/smzdm-login-iframe.png' });
 
+  // try to waitFor more time to load out iframe
+  await page.waitFor(500);
   const loginFrame = getLoginFrame(page);
   console.log('loginProcess.loginFrame.name', loginFrame.name());
 
