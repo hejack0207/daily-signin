@@ -84,7 +84,7 @@ const run = async () => {
   // login with retry
   await loginProcess(page);
 
-  await page.waitForNavigation({ waitUntil });
+  // await page.waitForNavigation({ waitUntil });
   await page.screenshot({
     path: './dev-images/smzdm-after-login-navigation.png',
   });
