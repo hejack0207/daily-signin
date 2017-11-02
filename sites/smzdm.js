@@ -89,7 +89,7 @@ const run = async () => {
   });
   await page.waitForSelector(ELES.userInfo);
 
-  await page.click(ELES.dailySigninButton);
+  await page.click(ELES.dailySigninButton, { clickCount: 5, delay: 10 });
   await page.screenshot({ path: './dev-images/smzdm-after-click-signin.png' });
   await page.waitFor(500);
 
