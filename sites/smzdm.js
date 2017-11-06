@@ -40,7 +40,6 @@ const loginProcess = async (page) => {
   console.log('loginProcess.waitfor.loginselector');
   await page.waitForSelector(ELES.login);
   await page.waitFor(500);
-  // await page.click(ELES.login, {clickCount: 2, delay: 10});
   await page.click(ELES.login);
   await page.waitForSelector(ELES.loginIframeID);
   await page.screenshot({ path: './dev-images/smzdm-login-iframe.png' });
@@ -91,7 +90,8 @@ const run = async () => {
 
   await page.click(ELES.dailySigninButton, { clickCount: 5, delay: 10 });
   await page.screenshot({ path: './dev-images/smzdm-after-click-signin.png' });
-  await page.waitFor(500);
+  // wait more 2s for api calling
+  await page.waitFor(2000);
 
   const dailySigninButtonMessage = await page.$eval(
     ELES.dailySigninButton,
