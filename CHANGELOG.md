@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.5.1"></a>
+## [2.5.1](https://github.com/yidinghan/daily-signin/compare/v2.5.0...v2.5.1) (2017-11-06)
+
+
+### Bug Fixes
+
+* **smzdm:** try more longger ([7ee63e5](https://github.com/yidinghan/daily-signin/commit/7ee63e5))
+* **smzdm:** wait before click it ([b3a94f5](https://github.com/yidinghan/daily-signin/commit/b3a94f5))
+* **smzmd:** try to wait more longer after click ([13170c3](https://github.com/yidinghan/daily-signin/commit/13170c3))
+* **szmdm:** wait 5s before click dailySigninButton ([124978a](https://github.com/yidinghan/daily-signin/commit/124978a))
+
+
+
 <a name="2.5.0"></a>
 # [2.5.0](https://github.com/yidinghan/daily-signin/compare/v2.4.0...v2.5.0) (2017-11-06)
 
