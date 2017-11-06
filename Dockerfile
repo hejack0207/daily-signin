@@ -1,4 +1,4 @@
-FROM node:8.7.0-slim AS base
+FROM node:8.9.0-slim AS base
 LABEL maintainer "palydingnow@gmail.com"
 
 RUN apt-get update && apt-get install -y wget --no-install-recommends \
