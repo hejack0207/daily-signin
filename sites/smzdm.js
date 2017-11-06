@@ -90,8 +90,8 @@ const run = async () => {
 
   await page.click(ELES.dailySigninButton, { clickCount: 5, delay: 10 });
   await page.screenshot({ path: './dev-images/smzdm-after-click-signin.png' });
-  // wait more 2s for api calling
-  await page.waitFor(2000);
+  // wait more 10s for api calling
+  await page.waitFor(10000);
 
   const dailySigninButtonMessage = await page.$eval(
     ELES.dailySigninButton,
