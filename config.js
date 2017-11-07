@@ -103,7 +103,7 @@ const config = {
       width: 1920,
       height: 1080,
     },
-    dumpio: process.env.NODE_ENV !== 'dev',
+    dumpio: false,
   },
 };
 
