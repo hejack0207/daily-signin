@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.7.0"></a>
+# [2.7.0](https://github.com/yidinghan/daily-signin/compare/v2.6.0...v2.7.0) (2017-11-10)
+
+
+### Features
+
+* **config:** put dumpio to false as default ([eb4df28](https://github.com/yidinghan/daily-signin/commit/eb4df28))
+* **v2ex:** use try/catch as retry flag ([127c04e](https://github.com/yidinghan/daily-signin/commit/127c04e))
+
+
+
 <a name="2.6.0"></a>
 # [2.6.0](https://github.com/yidinghan/daily-signin/compare/v2.5.1...v2.6.0) (2017-11-06)
 
