@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const assert = require('assert');
 
 const config = require('../config');
 const { orc } = require('../remote/baidu_ai');
@@ -23,7 +24,7 @@ const getCaptchaWords = async (page) => {
   return captchaWords;
 };
 
-const isLoginFailed = async (page) => {
+const assertLoginFailed = async (page) => {
   // element not exists
   if (!await page.$(ELES.loginIssue)) {
     return false;
@@ -31,25 +32,26 @@ const isLoginFailed = async (page) => {
 
   const message = await page.$eval(ELES.loginIssue, div => div.innerText);
   console.log('isLoginFailed.message', { message });
-  return message !== '';
+  assert(message !== '', 'empty mean not error');
 };
 
 const loginProcess = async (page) => {
   await page.goto(URLS.signin);
-  const captchaWords = await getCaptchaWords(page);
-  console.log('captchaWords', { captchaWords });
+  try {
+    const captchaWords = await getCaptchaWords(page);
+    console.log('captchaWords', { captchaWords });
 
-  const { username, password } = config.profile;
-  await page.type(ELES.usernameInput, username);
-  await page.type(ELES.passwordInput, password);
-  await page.type(ELES.captchaInput, captchaWords);
+    const { username, password } = config.profile;
+    await page.type(ELES.usernameInput, username);
+    await page.type(ELES.passwordInput, password);
+    await page.type(ELES.captchaInput, captchaWords);
 
-  await page.screenshot({ path: './dev-images/v2ex-before-login.png' });
-  await page.click(ELES.loginButton);
-  await page.waitFor(2000);
+    await page.screenshot({ path: './dev-images/v2ex-before-login.png' });
+    await page.click(ELES.loginButton);
+    await page.waitFor(2000);
 
-  const isFailed = await isLoginFailed(page);
-  if (isFailed) {
+    await assertLoginFailed(page);
+  } catch (e) {
     if (retryCount < 0) {
       throw new Error('login failed and out of retry');
     }
