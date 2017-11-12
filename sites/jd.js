@@ -45,8 +45,6 @@ const run = async () => {
     message: checkinSuccessMessage,
   });
 
-  // wait for debug
-  await page.waitFor(5000);
   await browser.close();
 };
 
