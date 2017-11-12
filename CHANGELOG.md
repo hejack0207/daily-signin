@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.8.0"></a>
+# [2.8.0](https://github.com/yidinghan/daily-signin/compare/v2.7.0...v2.8.0) (2017-11-12)
+
+
+### Bug Fixes
+
+* **jd:** new checkinBtn and checkinSuccess selector ([96c8a6d](https://github.com/yidinghan/daily-signin/commit/96c8a6d))
+
+
+### Features
+
+* **jd:** alpha version ([bd6b20d](https://github.com/yidinghan/daily-signin/commit/bd6b20d))
+* **jd:** finish login process ([7876810](https://github.com/yidinghan/daily-signin/commit/7876810))
+* **jd:** init puppeteer codes ([3169ddd](https://github.com/yidinghan/daily-signin/commit/3169ddd))
+
+
+
 <a name="2.7.0"></a>
 # [2.7.0](https://github.com/yidinghan/daily-signin/compare/v2.6.0...v2.7.0) (2017-11-10)
 
