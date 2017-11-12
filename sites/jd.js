@@ -30,11 +30,20 @@ const run = async () => {
 
   await loginProcess(page);
 
-  //   .click(ELES.checkinBtn)
-  //   .wait(ELES.checkinSuccess)
-  //   // "签到成功" if success
-  //   .evaluate(selector => document.querySelector(selector).innerText, ELES.checkinSuccess)
-  //   .end();
+  await page.waitForSelector(ELES.checkinBtn);
+  console.log('run.waitForSelector.checkinBtn.after');
+
+  await page.click(ELES.checkinBtn);
+  await page.waitForSelector(ELES.checkinSuccess);
+  console.log('run.waitForSelector.checkinSuccess.after');
+
+  const checkinSuccessMessage = await page.$eval(
+    ELES.checkinSuccess,
+    div => div.innerText,
+  );
+  console.log('run.checkinSuccess.message', {
+    message: checkinSuccessMessage,
+  });
 
   // wait for debug
   await page.waitFor(5000);
