@@ -35,7 +35,6 @@ const config = {
         home: 'http://vip.jd.com',
       },
       elements: {
-        gotoLogin: '#ttbar-login > a.link-login',
         usernameLoginButton:
           '#content > div > div.w > div > div.login-tab.login-tab-r > a',
         usernameInput: '#loginname',
