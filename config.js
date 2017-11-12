@@ -42,9 +42,9 @@ const config = {
         loginButton: '#loginsubmit',
         // "1113"
         jingBean: '#userJdNum',
-        checkinBtn: '#checkinBtn > i',
+        checkinBtn: '#signIn > span.icon-sign',
         checkinSuccess:
-          'body > div.ui-dialog.checkin-dialog.checkin.zoomIn.animated > div.ui-dialog-content > h2',
+          'body > div.ui-dialog.checkin-dialog.vip-dialog.zoomIn.animated > div > div.checkin-tips',
       },
     },
     smzdm: {
