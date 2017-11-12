@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.9.0"></a>
+# [2.9.0](https://github.com/yidinghan/daily-signin/compare/v2.8.0...v2.9.0) (2017-11-12)
+
+
+### Bug Fixes
+
+* **jdjr:** new checkinSuccess selector and ([47cb8c8](https://github.com/yidinghan/daily-signin/commit/47cb8c8))
+* **jdjr:** use waitForNavigation after goto login ([d4ebdf3](https://github.com/yidinghan/daily-signin/commit/d4ebdf3))
+
+
+### Features
+
+* **jdjr:** just copy jd.js ([d313dc8](https://github.com/yidinghan/daily-signin/commit/d313dc8))
+
+
+
 <a name="2.8.0"></a>
 # [2.8.0](https://github.com/yidinghan/daily-signin/compare/v2.7.0...v2.8.0) (2017-11-12)
 
