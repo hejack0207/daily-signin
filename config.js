@@ -26,8 +26,7 @@ const config = {
         passwordInput: '#nloginpwd',
         loginButton: '#loginsubmit',
         checkinBtn: '#index-qian-btn',
-        checkinSuccess:
-          'body > div.mem-sign.bag-popup > div.member-sign > div.sign-center > div > p',
+        checkinSuccess: '#getRewardText',
       },
     },
     jd: {
