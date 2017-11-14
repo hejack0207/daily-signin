@@ -5,7 +5,6 @@ const config = require('../config');
 const { urls: URLS, elements: ELES } = config.sites.smzdm;
 
 // const imageSuffix = ['.png', '.jpg'];
-const waitUntil = 'networkidle';
 
 const getLoginFrame = (page) => {
   const childFrames = page.mainFrame().childFrames();
@@ -31,7 +30,7 @@ const framePageMethods = {
 };
 
 const loginProcess = async (page) => {
-  await page.goto(URLS.home, { waitUntil });
+  await page.goto(URLS.home, { waitUntil: 'networkidle2' });
   await page.screenshot({ path: './dev-images/smzdm-home.png' });
 
   // for skip activity
