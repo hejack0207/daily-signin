@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.9.1"></a>
+## [2.9.1](https://github.com/yidinghan/daily-signin/compare/v2.9.0...v2.9.1) (2017-11-14)
+
+
+### Bug Fixes
+
+* **smzdm:** use networkidle2 instead of networkidle ([2cd374d](https://github.com/yidinghan/daily-signin/commit/2cd374d))
+
+
+
 <a name="2.9.0"></a>
 # [2.9.0](https://github.com/yidinghan/daily-signin/compare/v2.8.0...v2.9.0) (2017-11-12)
 
