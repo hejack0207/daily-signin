@@ -32,7 +32,8 @@ const assertLoginFailed = async (page) => {
 
   const message = await page.$eval(ELES.loginIssue, div => div.innerText);
   console.log('isLoginFailed.message', { message });
-  assert(message !== '', 'empty mean not error');
+  assert(message === '', 'empty mean not error');
+  return true;
 };
 
 const loginProcess = async (page) => {
