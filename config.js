@@ -19,9 +19,6 @@ const config = {
         home: 'http://172.16.0.251:81/login/Login.jsp?logintype=1',
       },
       elements: {
-        gotoLogin: '#for_loginid',
-        usernameLoginButton:
-          '#login',
         usernameInput: '#for_loginid',
         passwordInput: '#for_userpassword',
         loginButton: '#login',

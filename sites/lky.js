@@ -6,15 +6,7 @@ const { urls: URLS, elements: ELES } = config.sites.jdjr;
 
 const loginProcess = async (page) => {
   await page.goto(URLS.home);
-  await page.waitForSelector(ELES.gotoLogin);
-  await page.click(ELES.gotoLogin);
-  console.log('loginProcess.click.gotoLogin.after');
-  await page.waitForNavigation({ waitUntil: 'networkidle2' });
 
-  await page.waitForSelector(ELES.usernameLoginButton);
-  console.log('loginProcess.waitForSelector.usernameLoginButton.after');
-
-  await page.click(ELES.usernameLoginButton);
   await page.waitForSelector(ELES.usernameInput);
   console.log('loginProcess.waitForSelector.usernameInput.after');
 
