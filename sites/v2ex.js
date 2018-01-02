@@ -53,6 +53,7 @@ const loginProcess = async (page) => {
 
     await assertLoginFailed(page);
   } catch (e) {
+    console.error(e);
     if (retryCount < 0) {
       throw new Error('login failed and out of retry');
     }
