@@ -3,6 +3,9 @@
   "version": "2.9.2",
   "description": "daily signin script",
   "main": "index.js",
+  "bin": {
+    "xhzd": "sites/xhzd.js"
+  },
   "scripts": {
     "start": "node index.js"
   },
@@ -24,7 +27,8 @@
     "baidu-aip-sdk": "^1.4.1",
     "ding-env-config": "^1.2.0",
     "lodash.defaultsdeep": "^4.6.0",
-    "puppeteer": "^0.13.0"
+    "puppeteer": "^0.13.0",
+    "commander": "^2.12.2"
   },
   "devDependencies": {
     "@types/puppeteer": "^0.12.3",
