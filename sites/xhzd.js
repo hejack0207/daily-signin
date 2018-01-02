@@ -26,6 +26,10 @@ const run = async () => {
   await page.waitForNavigation({ waitUntil: 'networkidle2' });
 
   await page.screenshot({ path: './dev-images/xhzd.png' });
+  
+  const contents = await page.$eval('.text15',e => e.innerText);
+  console.log('contents:'+contents);
+
   console.log('png saved!');
 
   await browser.close();
